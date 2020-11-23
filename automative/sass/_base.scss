@@ -1,5 +1,8 @@
+// imports
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap');
+
 // Variables
-$primary-font: "roboto";
+$primary-font: "Roboto";
 $secondary-font: "Open Sans";
 
 $color-primary-blue: #00C2FF;
@@ -32,9 +35,9 @@ html {
     box-sizing: border-box;
     font-size: 62.5%; // 10px becomes the 1rem -> 0.625 * 16px (default ft size) == 10px
 
-    @media only screen and (max-width: ___) {
-        font-size: 50%; // 8px
-    }
+    // @media only screen and (max-width: ___) {
+    //     font-size: 50%; // 8px
+    // }
 }
 
 body {

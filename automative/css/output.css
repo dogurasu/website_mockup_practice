@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -13,42 +14,51 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
-@media only screen and (max-width: ___) {
-  html {
-    font-size: 50%;
-  }
-}
 
 body {
-  font-family: "roboto", "Open Sans";
+  font-family: "Roboto", "Open Sans";
   font-weight: 400;
   line-height: 1.6;
   color: #333;
 }
 
-.hero {
-  background-image: url(../img/bg.jpg);
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
 }
 
-@media screen and (max-width: 90em) {
-  .header {
-    color: red;
-  }
+.header {
+  background: url("../img/bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
 }
-@media screen and (max-width: 64em) {
-  .header {
-    color: blue;
-  }
+
+.header {
+  color: #ffffff;
 }
-@media screen and (max-width: 48em) {
-  .header {
-    color: orange;
-  }
+.header .container {
+  display: flex;
 }
-@media screen and (max-width: 26.5625em) {
-  .header {
-    color: purple;
-  }
+.header .nav__top__main {
+  display: flex;
+  align-items: center;
+}
+.header .nav__top__menu {
+  display: flex;
+  list-style: none;
+  color: inherit;
+}
+.header .nav__top__single--link {
+  color: inherit;
+  text-decoration: none;
+}
+.header .nav__top__header {
+  font-size: 4.8rem;
+  letter-spacing: 1px;
+}
+.header .nav__top__logo {
+  width: 6.4rem;
+  height: 6.4rem;
 }
 
 /*# sourceMappingURL=output.css.map */
