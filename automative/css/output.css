@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+@media only screen and (max-width: ___) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "roboto", "Open Sans";
+  font-weight: 400;
+  line-height: 1.6;
+  color: #333;
+}
+
+.hero {
+  background-image: url(../img/bg.jpg);
+}
+
+@media screen and (max-width: 90em) {
+  .header {
+    color: red;
+  }
+}
+@media screen and (max-width: 64em) {
+  .header {
+    color: blue;
+  }
+}
+@media screen and (max-width: 48em) {
+  .header {
+    color: orange;
+  }
+}
+@media screen and (max-width: 26.5625em) {
+  .header {
+    color: purple;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */

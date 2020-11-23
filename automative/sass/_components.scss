@@ -1,0 +1,21 @@
+.hero {
+    background-image: url(../img/bg.jpg);
+}
+
+.header {
+    @media screen and (max-width: $bp-desktop) {
+        color: red;
+    }
+    
+    @media screen and (max-width: $bp-laptop) {
+        color: blue;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+        color: orange;
+    }
+
+    @media screen and (max-width: $bp-phone) {
+        color: purple;
+    }
+}

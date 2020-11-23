@@ -1,0 +1,47 @@
+// Variables
+$primary-font: "roboto";
+$secondary-font: "Open Sans";
+
+$color-primary-blue: #00C2FF;
+$color-primary-white: #ffffff;
+$color-primary-black: #000000;
+$color-primary-gray-light: #faf9f9;
+$color-primary-gray-dark: #333;
+
+$box-shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+$box-shadow-light: 0 2rem 5rem rgba(0, 0, 0, .06);
+
+$bp-desktop: 90em;
+$bp-laptop: 64em;
+$bp-tablet: 48em;
+$bp-phone: 26.5625em;
+
+// resets
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px becomes the 1rem -> 0.625 * 16px (default ft size) == 10px
+
+    @media only screen and (max-width: ___) {
+        font-size: 50%; // 8px
+    }
+}
+
+body {
+    font-family: $primary-font, $secondary-font;
+    font-weight: 400;
+    line-height: 1.6;
+
+    color: $color-primary-gray-dark;
+}
+
