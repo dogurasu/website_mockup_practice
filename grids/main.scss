@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+}
+
+body {
+    font-family: arial;
+
+    .container {
+        max-width: 120rem;
+        margin: 0 auto;
+        border: thin solid green;
+        height: 100vh;
+        // padding: 5rem;
+
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+        .square {
+            width: 60%;
+            height: 60%;
+            border: thin solid black;
+            margin: 0 auto;
+            align-self: center;
+        }
+    }
+}
