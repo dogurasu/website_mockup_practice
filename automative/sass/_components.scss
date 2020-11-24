@@ -1,8 +1,29 @@
+.btn {
+    color: $color-primary-white;
+    text-decoration: none;
+    font-size: 2rem;
+    letter-spacing: .8px;
+    background-color: $color-primary-blue;
+    padding: 1.25rem 2rem;
+    border-radius: 2px;
+    border: none;
+    transition: all 0.5s;
+    opacity: 1;
+    display: block;
+    cursor: pointer;
+
+    &:hover {
+        opacity: .8;
+    }
+}
+
 .header {
     color: $color-primary-white;
+    padding-top: 1rem;
 
     .container {
         display: flex;
+        justify-content: space-between;
     }
 
     .nav__top {
@@ -13,11 +34,15 @@
 
         &__menu {
             display: flex;
+            align-items: center;
             list-style: none;
             color: inherit;
         }
 
         &__single {
+            font-size: 2rem;
+            letter-spacing: .8px;
+            margin: 0rem 1rem;
 
             &--link {
                 color: inherit;
@@ -26,19 +51,35 @@
         }
 
         &__header {
-            font-size: 4.8rem;
+            font-size: 4rem;
             letter-spacing: 1px;
         }
 
         &__logo {
-            width: 6.4rem;
-            height: 6.4rem;
+            width: 5.4rem;
+            height: 5.4rem;
+            margin-right: 1.5rem;
         }
     }
 }
 
 .hero {
-    
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 80vh;
+
+        .nav__top__book {
+            align-self: flex-start;
+        }
+    }
+
+    &__header {
+        &--main {
+            font-size: 6.4
+        }
+    }
 }
 
 // .header {
