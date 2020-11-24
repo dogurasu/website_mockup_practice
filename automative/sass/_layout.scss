@@ -1,5 +1,5 @@
 .container {
-    max-width: 110rem;
+    max-width: 130rem;
     margin: 0 auto;
 }
 
@@ -7,4 +7,61 @@
     background: url("../img/bg.jpg") no-repeat center center;
     background-size: cover;
     height: 100vh;
+    // height: 90vh;
+}
+
+.footer {
+    height: 10vh;
+    background-color: $color-primary-black;
+    color: white;
+
+    .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.nav__bottom {
+    &__menu {
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        font-size: 2rem;
+
+        & > * {
+            font-size: inherit;
+        }
+    }
+
+    &__location,
+    &__phone,
+    &__email {
+        color: $color-primary-blue;
+    }
+
+    &__address {
+
+    }
+
+    &__phone {
+        grid-column-start: 2;
+        grid-row-start: 1;
+
+    }
+
+    &__number {
+
+    }
+
+    &__email {
+        grid-column-start: 3;
+        grid-row-start: 1;
+    }
+
+    &__email-address {
+
+    }
+    
 }
